@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berichtsheft Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header><h1>Berichtsheft Manager</h1></header>
+
+    <section class="controls card">
+      <label>Woche <input type="week" id="weekPicker"></label>
+      <button id="addWeek">Neue Woche hinzufügen</button>
+      <button id="duplicateWeek">Woche duplizieren</button>
+      <input id="search" placeholder="Suche nach Tätigkeit..." />
+      <label><input type="checkbox" id="darkToggle"> Dunkles Thema</label>
+    </section>
+
+    <section id="weeks" class="card">
+      <!-- Wochen werden hier eingefügt -->
+    </section>
+
+    <section class="card">
+      <h2>Besondere Bemerkungen</h2>
+      <textarea id="notes" rows="4"></textarea>
+    </section>
+
+    <footer class="actions">
+      <button id="exportPdf">PDF exportieren</button>
+      <button id="exportDocx">DOCX exportieren</button>
+      <button id="exportBackup">Backup export</button>
+      <button id="importBackup">Backup importieren</button>
+    </footer>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
